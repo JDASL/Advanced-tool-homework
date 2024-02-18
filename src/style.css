@@ -31,30 +31,12 @@ h3 {
 
 p {
   background: var(--secondary-color);
+  font-size: 15px;
   padding: 20px;
   border-radius: 4px;
   font-size: 18px;
   line-height: 1.5;
   text-align: center;
-}
-
-@media (max-width: 600px) {
-  h1 {
-    font-size: 45px;
-  }
-
-  p,
-  h2 {
-    text-align: center;
-  }
-  .primary-link {
-    display: flex;
-    justify-content: center;
-    margin: 20px 40px 20px 40px;
-  }
-}
-
-@media (min-width: 800px) {
 }
 
 .project-image {
@@ -134,6 +116,7 @@ p {
 .row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 50px auto;
   max-width: 800px;
   padding: 0 20px;
@@ -147,4 +130,29 @@ p {
   background: var(--primary-color);
   box-shadow: var(--box-shadow);
   color: white;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 45px;
+  }
+
+  p,
+  h2 {
+    text-align: center;
+  }
+  a {
+    display: block;
+    justify-content: center;
+    text-align: center;
+  }
+  img {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    width: 100%;
+  }
 }
